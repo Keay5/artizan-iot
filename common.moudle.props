@@ -1,0 +1,24 @@
+<Project>
+  <Import Project="Version.props" />
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>$(NoWarn);CS1591;CS0436;CS8618;NU1803</NoWarn>
+    <AbpProjectType>module</AbpProjectType>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="ConfigureAwait.Fody" PrivateAssets="All" />
+    <PackageReference Include="Fody">
+      <PrivateAssets>All</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+
+  <Target Name="NoWarnOnRazorViewImportedTypeConflicts" BeforeTargets="RazorCoreCompile">
+    <PropertyGroup>
+      <NoWarn>$(NoWarn);0436</NoWarn>
+    </PropertyGroup>
+  </Target>
+
+</Project>

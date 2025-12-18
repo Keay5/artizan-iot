@@ -1,0 +1,11 @@
+<Project>
+    <PropertyGroup>
+    
+         <!-- All Abp packages -->
+        <AbpVersion>9.3.6</AbpVersion>
+
+        <!-- All Artizan Abp packages -->
+        <ArtizanAbpVersion>9.3.6</ArtizanAbpVersion>
+
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- MsOnAbp version -->
+    <Version>9.3.6</Version>
+  </PropertyGroup>
+</Project>
