@@ -1,0 +1,9 @@
+{
+  "id": "c86751b5-e62f-4296-9793-4eb132618db9",
+  "template": "empty",
+  "modules": {
+    "Artizan.IoT": {
+      "path": "Artizan.IoT.abpmdl"
+    }
+  }
+}
