@@ -1,4 +1,5 @@
-﻿using Artizan.IoT.ThingModels.Tsls;
+﻿using Artizan.IoT.Products.Caches;
+using Artizan.IoT.ThingModels.Tsls;
 using Artizan.IoT.ThingModels.Tsls.Serializations;
 using Artizan.IoTHub.Products.Modules;
 using Microsoft.Extensions.Caching.Distributed;

@@ -1,7 +1,7 @@
-﻿using Artizan.IoTHub.Devices;
+﻿using Artizan.IoT.Products.Caches;
+using Artizan.IoTHub.Devices;
 using Artizan.IoTHub.Devices.Caches;
 using Artizan.IoTHub.Products;
-using Artizan.IoTHub.Products.Caches;
 using AutoMapper;
 
 namespace Artizan.IoTHub;

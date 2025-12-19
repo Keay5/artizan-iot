@@ -1,5 +1,5 @@
 ﻿using Artizan.IoTHub.Products;
-using Artizan.IoTHub.Products.Properties;
+using Artizan.IoT.Products.Properties;
 using System.Threading.Tasks;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;

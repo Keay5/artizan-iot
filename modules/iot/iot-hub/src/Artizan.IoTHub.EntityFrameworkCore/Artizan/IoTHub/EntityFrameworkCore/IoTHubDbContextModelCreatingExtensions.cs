@@ -1,12 +1,12 @@
 ﻿using Artizan.IoTHub.Devices;
 using Artizan.IoTHub.Products;
 using Artizan.IoTHub.Products.Modules;
-using Artizan.IoTHub.Products.ProductMoudles;
-using Artizan.IoTHub.Products.Properties;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.Modeling;
+using Artizan.IoT.Products;
+using Artizan.IoT.Products.ProductMoudles;
+using Artizan.IoT.Devices;
 
 namespace Artizan.IoTHub.EntityFrameworkCore;
 

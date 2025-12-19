@@ -1,4 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿using Artizan.IoT.Products.MessageParsings;
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;

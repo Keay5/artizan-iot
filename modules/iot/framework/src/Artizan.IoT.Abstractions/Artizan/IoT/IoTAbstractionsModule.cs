@@ -1,5 +1,4 @@
 using Artizan.IoT.Localization;
-using Artizan.IoT.Mqtt.Signs;
 using Artizan.IoT.Mqtts.MessageHanlders;
 using Artizan.IoT.Mqtts.Topics.Registrys;
 using Artizan.IoT.Mqtts.Topics.Routes;
@@ -69,8 +68,7 @@ public class IoTAbstractionsModule : AbpModule
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
     {
-        // 将全局的 LazyServiceProvider 赋值给静态类
-        MqttSignHelper.LazyServiceProvider = context.ServiceProvider.GetRequiredService<IAbpLazyServiceProvider>();
+
     }
 
     /// <summary>
@@ -192,13 +190,13 @@ public class IoTAbstractionsModule : AbpModule
                     // 4. 可被DI容器解析（已注册具体类）
                     var handlerTypes = assembly.GetTypes()
                         .Where(t =>
-                            typeof(IMqttMessageHandler).IsAssignableFrom(t) 
+                            typeof(IMqttMessageHandler).IsAssignableFrom(t)
                             && !t.IsInterface         // 过滤接口
                             && !t.IsAbstract          // 过滤抽象类（关键：排除SafeMqttMessageHandler）
                             && t.GetCustomAttributes<MqttTopicRouteAttribute>(false).Any() // 仅扫描标记路由特性的类
                             && IsTypeResolvable(serviceProvider, t) // 确保DI已注册该具体类
                         );
-                                    
+
                     // 遍历Handler并注册路由规则
                     foreach (var handlerType in handlerTypes)
                     {

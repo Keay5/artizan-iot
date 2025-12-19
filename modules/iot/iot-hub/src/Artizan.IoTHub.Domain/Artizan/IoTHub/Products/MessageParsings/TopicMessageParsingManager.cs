@@ -1,7 +1,8 @@
 ﻿using Artizan.IoT.Mqtts.Etos;
+using Artizan.IoT.Products.MessageParsings;
+using Artizan.IoT.Products.MessageParsings.Etos;
+using Artizan.IoT.Products.Properties;
 using Artizan.IoTHub.Products.Caches;
-using Artizan.IoTHub.Products.MessageParsings.Etos;
-using Artizan.IoTHub.Products.Properties;
 using Artizan.IoTHub.Topics;
 using Microsoft.Extensions.Logging;
 using System;

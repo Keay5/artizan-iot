@@ -1,11 +1,7 @@
 ﻿using Artizan.IoT.Alinks;
-using Artizan.IoT.Alinks.DataObjects;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Diagnostics.Tracing;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.DependencyInjection;
@@ -30,7 +26,7 @@ public class AlinkJsonMqttMessageParser : IMqttMessageParser, ITransientDependen
         // TODO:可从配置/产品属性判断：比如ProductKey以“ALINK_”开头用该解析器
         return context.ProductKey.StartsWith("ALINK_");
     }
-    
+
     public async Task<object> ParseAsync(MqttMessageContext context)
     {
         var stopwatch = Stopwatch.StartNew();
@@ -54,7 +50,7 @@ public class AlinkJsonMqttMessageParser : IMqttMessageParser, ITransientDependen
             context.SetParseFailed("Alink JSON parse failed", stopwatch.Elapsed, ex);
             _logger.LogError(ex, "Parse failed, TraceId: {TraceId}", context.TraceId);
 
-            throw; 
+            throw;
         }
     }
 

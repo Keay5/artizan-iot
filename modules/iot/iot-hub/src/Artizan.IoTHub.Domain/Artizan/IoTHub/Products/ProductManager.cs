@@ -1,7 +1,7 @@
-﻿using Artizan.IoTHub.Devices;
+﻿using Artizan.IoT.Products.Properties;
+using Artizan.IoTHub.Devices;
 using Artizan.IoTHub.Devices.Exceptions;
 using Artizan.IoTHub.Localization;
-using Artizan.IoTHub.Products.Properties;
 using Microsoft.Extensions.Localization;
 using System;
 using System.Collections.Generic;

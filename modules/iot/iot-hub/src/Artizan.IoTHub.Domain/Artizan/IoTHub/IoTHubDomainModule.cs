@@ -1,6 +1,6 @@
 ﻿using Artizan.IoT;
+using Artizan.IoT.Products.Caches;
 using Artizan.IoTHub.Devices.Caches;
-using Artizan.IoTHub.Products.Caches;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using Volo.Abp.AutoMapper;

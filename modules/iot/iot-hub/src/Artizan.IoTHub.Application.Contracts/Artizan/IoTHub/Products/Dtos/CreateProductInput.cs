@@ -1,5 +1,4 @@
-﻿
-using Artizan.IoTHub.Products.Properties;
+﻿using Artizan.IoT.Products.Properties;
 
 namespace Artizan.IoTHub.Products.Dtos;
 

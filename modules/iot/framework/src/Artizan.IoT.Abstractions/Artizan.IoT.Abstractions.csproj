@@ -23,7 +23,13 @@
 
     <ItemGroup>
       <EmbeddedResource Include="Artizan\IoT\Resources\**\*.*" />
+      <Compile Remove="Artizan\IoT\Alinks\DataObjectsOld\**" />
+      <Compile Remove="Artizan\IoT\Mqtt\**" />
       <Content Remove="Artizan\IoT\Resources\**\*.*" />
+      <EmbeddedResource Remove="Artizan\IoT\Alinks\DataObjectsOld\**" />
+      <EmbeddedResource Remove="Artizan\IoT\Mqtt\**" />
+      <None Remove="Artizan\IoT\Alinks\DataObjectsOld\**" />
+      <None Remove="Artizan\IoT\Mqtt\**" />
     </ItemGroup>
 
     <ItemGroup>

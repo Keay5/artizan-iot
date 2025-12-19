@@ -1,4 +1,5 @@
-﻿using Artizan.IoT.ThingModels.Tsls.Exceptions;
+﻿using Artizan.IoT.Products.Properties;
+using Artizan.IoT.ThingModels.Tsls.Exceptions;
 using Artizan.IoTHub;
 using Artizan.IoTHub.Devices;
 using Artizan.IoTHub.Devices.Dtos;
@@ -7,7 +8,6 @@ using Artizan.IoTHub.Products;
 using Artizan.IoTHub.Products.Dtos;
 using Artizan.IoTHub.Products.Modules;
 using Artizan.IoTHub.Products.Modules.Dtos;
-using Artizan.IoTHub.Products.Properties;
 using Shouldly;
 using System;
 using System.Linq;

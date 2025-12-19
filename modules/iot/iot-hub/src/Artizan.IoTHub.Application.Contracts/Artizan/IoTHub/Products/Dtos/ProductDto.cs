@@ -1,4 +1,4 @@
-﻿using Artizan.IoTHub.Products.Properties;
+﻿using Artizan.IoT.Products.Properties;
 using JetBrains.Annotations;
 using System;
 using Volo.Abp.Application.Dtos;

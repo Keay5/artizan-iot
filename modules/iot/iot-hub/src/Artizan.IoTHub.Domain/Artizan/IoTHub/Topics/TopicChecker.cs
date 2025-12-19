@@ -1,4 +1,5 @@
-﻿using Artizan.IoT.Topics;
+﻿using Artizan.IoT.Mqtts.Topics;
+using Artizan.IoT.Topics;
 using System;
 using System.Text.RegularExpressions;
 
@@ -29,7 +30,7 @@ public class TopicChecker
         }
 
         // 获取主题格式常量
-        string patternTemplate = TopicSpeciesConsts.ThingModelCommunication.PassThrough.UpRaw;
+        string patternTemplate = MqttTopicSpeciesConsts.ThingModelCommunication.PassThrough.UpRaw;
 
         // 将模板中的变量替换为正则表达式（匹配非/的任意字符）
         string regexPattern = Regex.Escape(patternTemplate)
@@ -56,7 +57,7 @@ public class TopicChecker
         }
 
         // 获取主题格式常量
-        string patternTemplate = TopicSpeciesConsts.ThingModelCommunication.PassThrough.DownRaw;
+        string patternTemplate = MqttTopicSpeciesConsts.ThingModelCommunication.PassThrough.DownRaw;
 
         // 将模板中的${productKey}和${deviceName}占位符替换为正则表达式（匹配非/的任意字符）
         string regexPattern = Regex.Escape(patternTemplate)

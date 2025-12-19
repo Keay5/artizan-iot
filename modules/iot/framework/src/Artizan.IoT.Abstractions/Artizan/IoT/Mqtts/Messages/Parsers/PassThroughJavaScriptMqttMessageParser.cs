@@ -1,11 +1,7 @@
 ﻿using Artizan.IoT.Alinks;
-using Artizan.IoT.Alinks.DataObjects;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.DependencyInjection;
 
@@ -23,7 +19,7 @@ public class PassThroughJavaScriptMqttMessageParser : IMqttMessageParser, ITrans
 
     public MqttMessageDataParseType SupportType => MqttMessageDataParseType.PassThrough;
 
-    public  PassThroughJavaScriptMqttMessageParser(
+    public PassThroughJavaScriptMqttMessageParser(
         ILogger<AlinkJsonMqttMessageParser> logger,
         IJavaScriptExecutor javaScriptExecutor)
     {
@@ -71,5 +67,5 @@ public class PassThroughJavaScriptMqttMessageParser : IMqttMessageParser, ITrans
         }
 
     }
-    
+
 }

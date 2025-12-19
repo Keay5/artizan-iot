@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Artizan.IoT.Devices;
+using System;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Domain.Entities;
 

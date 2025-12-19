@@ -1,4 +1,5 @@
-﻿using Artizan.IoTHub.EntityFrameworkCore;
+﻿using Artizan.IoT.Products.MessageParsings;
+using Artizan.IoTHub.EntityFrameworkCore;
 using Artizan.IoTHub.Products.MessageParsings;
 using Artizan.IoTHub.Products.Modules;
 using Microsoft.EntityFrameworkCore;

@@ -1,4 +1,5 @@
-﻿using Artizan.IoT.ThingModels.Tsls;
+﻿using Artizan.IoT.Products.ProductMoudles;
+using Artizan.IoT.ThingModels.Tsls;
 using Artizan.IoT.ThingModels.Tsls.DataObjects.Specs;
 using Artizan.IoT.ThingModels.Tsls.Exceptions;
 using Artizan.IoT.ThingModels.Tsls.MetaDatas;
@@ -9,7 +10,6 @@ using Artizan.IoT.ThingModels.Tsls.MetaDatas.Services;
 using Artizan.IoT.ThingModels.Tsls.Serializations;
 using Artizan.IoT.ThingModels.Tsls.Validators;
 using Artizan.IoTHub.Localization;
-using Artizan.IoTHub.Products.ProductMoudles;
 using Microsoft.Extensions.Localization;
 using System;
 using System.Collections.Generic;

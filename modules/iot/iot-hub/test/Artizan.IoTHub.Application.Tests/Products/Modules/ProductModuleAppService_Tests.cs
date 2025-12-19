@@ -1,4 +1,5 @@
 ﻿using Artizan.IoT;
+using Artizan.IoT.Products.Properties;
 using Artizan.IoT.ThingModels.Tsls;
 using Artizan.IoT.ThingModels.Tsls.DataObjects;
 using Artizan.IoT.ThingModels.Tsls.DataObjects.Specs;
@@ -7,7 +8,6 @@ using Artizan.IoT.ThingModels.Tsls.MetaDatas.Enums;
 using Artizan.IoT.ThingModels.Tsls.Serializations;
 using Artizan.IoTHub.Products.Dtos;
 using Artizan.IoTHub.Products.Modules.Dtos;
-using Artizan.IoTHub.Products.Properties;
 using Shouldly;
 using System;
 using System.Collections.Generic;

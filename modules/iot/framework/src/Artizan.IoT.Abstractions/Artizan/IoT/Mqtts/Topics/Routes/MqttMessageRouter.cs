@@ -1,9 +1,7 @@
 ﻿using Artizan.IoT.Mqtts.MessageHanlders;
 using Artizan.IoT.Mqtts.Messages;
 using Artizan.IoT.Mqtts.Messages.Parsers;
-using Artizan.IoT.Mqtts.Topics;
 using Artizan.IoT.Mqtts.Topics.Registrys;
-using Artizan.IoT.Mqtts.Topics.Routes;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
@@ -12,6 +10,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.DependencyInjection;
+
+namespace Artizan.IoT.Mqtts.Topics.Routes;
 
 /// <summary>
 /// MQTT消息路由核心（核心职责：消息Topic匹配、Handler调度、全流程执行）

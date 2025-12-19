@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Artizan.IoT.Devices;
+using System;
 
 namespace Artizan.IoTHub.Devices.Caches;
 

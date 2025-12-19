@@ -1,4 +1,4 @@
-﻿using Artizan.IoTHub.Products.ProductMoudles;
+﻿using Artizan.IoT.Products.ProductMoudles;
 using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;

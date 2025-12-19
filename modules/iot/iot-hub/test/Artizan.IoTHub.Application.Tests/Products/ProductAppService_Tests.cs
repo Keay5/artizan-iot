@@ -1,5 +1,5 @@
-﻿using Artizan.IoTHub.Products.Dtos;
-using Artizan.IoTHub.Products.Properties;
+﻿using Artizan.IoT.Products.Properties;
+using Artizan.IoTHub.Products.Dtos;
 using Shouldly;
 using System.Threading.Tasks;
 using Volo.Abp;

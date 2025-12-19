@@ -1,4 +1,5 @@
-﻿using Artizan.IoTHub.Devices.Exceptions;
+﻿using Artizan.IoT.Devices;
+using Artizan.IoTHub.Devices.Exceptions;
 using Artizan.IoTHub.Localization;
 using Artizan.IoTHub.Products;
 using Microsoft.Extensions.Localization;

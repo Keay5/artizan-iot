@@ -1,4 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿using Artizan.IoT.Devices;
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
