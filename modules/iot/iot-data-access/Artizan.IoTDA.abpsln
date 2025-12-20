@@ -1,9 +1,0 @@
-{
-  "id": "5bbafab0-4d83-4df6-a403-13a3db3ef379",
-  "template": "empty",
-  "modules": {
-    "Artizan.IoTDA": {
-      "path": "Artizan.IoTDA.abpmdl"
-    }
-  }
-}
