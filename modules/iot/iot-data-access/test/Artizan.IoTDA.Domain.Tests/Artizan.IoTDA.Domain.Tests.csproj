@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Artizan.IoTDA.Domain\Artizan.IoTDA.Domain.csproj" />
+    <ProjectReference Include="..\Artizan.IoTDA.TestBase\Artizan.IoTDA.TestBase.csproj" />
+  </ItemGroup>
+
+
+</Project>
