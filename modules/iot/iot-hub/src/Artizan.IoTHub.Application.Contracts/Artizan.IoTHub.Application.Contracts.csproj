@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" /> 
+    <PackageReference Include="Volo.Abp.Authorization" />
+    <PackageReference Include="MQTTnet" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Artizan.IoTHub.Domain.Shared\Artizan.IoTHub.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\..\framework\src\Artizan.IoT.Abstractions\Artizan.IoT.Abstractions.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Artizan\IoTHub\Alinks\" />
+  </ItemGroup>
+  
+</Project>
