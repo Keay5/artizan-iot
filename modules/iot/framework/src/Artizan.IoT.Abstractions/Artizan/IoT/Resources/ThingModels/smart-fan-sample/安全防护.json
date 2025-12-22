@@ -1,0 +1,58 @@
+{
+  "schema": "https://iotx-tsl.oss-ap-southeast-1.aliyuncs.com/schema.json",
+  "profile": {
+    "version": "1.0",
+    "productKey": "a1uTRHgdQVF"
+  },
+  "properties": [],
+  "events": [],
+  "services": [
+    {
+      "identifier": "setChildLock",
+      "name": "控制童锁",
+      "required": false,
+      "callType": "async",
+      "desc": "用户开启 / 关闭童锁",
+      "method": "thing.service.setChildLock",
+      "inputData": [
+        {
+          "identifier": "lockerStatus",
+          "name": "锁的状态",
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": "关",
+              "1": "开"
+            }
+          }
+        }
+      ],
+      "outputData": [
+        {
+          "identifier": "success",
+          "name": "是否成功",
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": "失败",
+              "1": "成功"
+            }
+          }
+        },
+        {
+          "identifier": "lockerStatus",
+          "name": "锁的状态",
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": "关",
+              "1": "开"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "functionBlockId": "SecurityProtection",
+  "functionBlockName": "安全防护"
+}
