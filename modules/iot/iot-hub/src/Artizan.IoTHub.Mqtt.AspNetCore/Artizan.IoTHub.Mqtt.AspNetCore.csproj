@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace />
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        <CopyLocalLockFileAssemblies>True</CopyLocalLockFileAssemblies>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc" />
+        <PackageReference Include="MQTTnet.AspNetCore" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Artizan.IoTHub.Application\Artizan.IoTHub.Application.csproj" />
+    </ItemGroup>
+
+</Project>
