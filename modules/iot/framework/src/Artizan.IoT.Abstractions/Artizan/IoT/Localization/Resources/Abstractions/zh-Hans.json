@@ -1,0 +1,16 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "IoT:TSLFormatError": "TSL 格式错误:{Errors}",
+    "DisplayName:Artizan.IoT.Message.Cache.Enabled": "启用",
+    "DisplayName:Artizan.IoT.Message.Cache.EnabledDescription": "启用设备数据缓存",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchSize": "设备数据缓存批量写入阈值",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchSizeDescription": "达到该数量触发批量写入缓存",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchTimeoutSeconds": "设备数据缓存批量写入超时时间(秒)",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchTimeoutSecondsDescription": "即使未达阈值，超时后也触发批量写入",
+    "DisplayName:Artizan.IoT.Message.Cache.LatestDataExpireSeconds": "设备数据最新值缓存过期时间(秒)",
+    "DisplayName:Artizan.IoT.Message.Cache.LatestDataExpireSecondsDescription": "设备数据最新属性数据的Redis过期时间",
+    "DisplayName:Artizan.IoT.Message.Cache.HistoryDataRetainSeconds": "设备数据历史数据保留时长(秒)",
+    "DisplayName:Artizan.IoT.Message.Cache.HistoryDataRetainSecondsDescription": "缓存中保留的历史数据最大时长"
+  }
+}
