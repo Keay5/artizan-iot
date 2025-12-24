@@ -1,0 +1,72 @@
+﻿using System.Text.RegularExpressions;
+
+namespace Artizan.IoT.Products;
+
+public static class ProductConsts
+{
+    /// <summary>
+    /// 产品Key正则表达式（4-30字符，支持中文/字母/数字/_/-/@/()）
+    /// </summary>
+    public const string ProductKeyRegexPattern = @"^[\u4e00-\u9fa5a-zA-Z0-9_\-@()]{4,30}$";
+    /// <summary>
+    /// 产品Key正则验证实例
+    /// 参数： RegexOptions.Compiled:（预编译，重复使用高效
+    /// </summary>
+    public static readonly Regex ProductKeyRegex = new Regex(ProductKeyRegexPattern, RegexOptions.Compiled);
+
+    /// <summary>
+    /// 产品Key需满足：
+    ///     ♦ 非空
+    ///     ♦长度：不超过36个字符，
+    ///     ♦允许字符：只允许字母、数字、下划线（_）、连接符（-）的组合
+    ///     
+    ///产品名称正则表达式常量：@"^[a-zA-Z0-9_-]*$"
+    ///说明：
+    ///1) ^: 表示匹配字符串的开始位置。其与$: 匹配字符串的结束位置，两者结合表示：整个字符串必须完全符合括号内的规则（不能只匹配部分内容）。
+    ///2) [a-zA-Z0-9_-]:[]是正则的字符类，表示“匹配方括号内的任意一个字符”。里面的内容是允许出现在产品名称中的所有字符。
+    ///                 这是一个字符类（character class），表示匹配方括号内的任意一个字符。
+    ///     ♦ a-z : 匹配任意小写字母（从a到z）。
+    ///     ♦ A-Z : 匹配任意大写字母（从A到Z）。
+    ///     ♦ 0-9 : 匹配任意数字（从0到9）。
+    ///     ♦ _ : 匹配下划线。
+    ///     ♦ - : 注意，这里有一个短横线。在字符类中，短横线通常表示一个范围，但因为它位于字符类的最后（在_后面），所以它只是一个普通字符，匹配短横线本身。如果短横线不在两个字符之间（比如不在a和z之间），那么它就不表示范围，而是字面意义上的短横线。
+    /// 3) * : 表示前面的字符类可以出现0次或多次。也就是说，这个字符串可以是空字符串，也可以由上述字符组成。
+    /// 4) $ : 表示匹配字符串的结束位置。
+    /// </summary>
+    public const string ProductKeyCharRegexPattern = @"^[a-zA-Z0-9_-]*$";
+    public const int MaxProductKeyLength = 64;
+    public const int MaxProductSecretLength = 128;
+
+    public const string ProductNameCharRegexPattern = @"^[\u4e00-\u9fa5\u9fa6-\u9fff_a-zA-Z0-9]+$";
+    public const int MinProductNameLength = 4;
+    public const int MaxProductNameLength = 30;
+
+    /// <summary>
+    /// 产品名称需满足：
+    ///     ♦非空，
+    ///     ♦长度：1~64个字符
+    ///     ♦允许字符：中文、大小写字母、数字，以及 _?'#().,&%@!=-中的特殊符号
+    /// 
+    /// 产品名称正则表达式常量：@"^[\u4e00-\u9fa5a-zA-Z0-9_\'#\(\)\.\?,&%@!=-]*$"
+    /// 说明：
+    /// 1)^: 匹配字符串的开始位置。其与$: 匹配字符串的结束位置，两者结合表示：整个字符串必须完全符合括号内的规则（不能只匹配部分内容）。
+    /// 2)[\u4e00-\u9fa5...] : []是正则的字符类，表示“匹配方括号内的任意一个字符”。里面的内容是允许出现在产品名称中的所有字符
+    ///     ♦ \u4e00-\u9fa5：Unicode 编码范围，覆盖常用汉字（比如“测试”“设备”中的字符）。
+    ///     ♦ a-zA-Z：匹配所有大小写英文字母（比如“SmartDevice”中的字母）。
+    ///     ♦ 0-9：匹配所有数字（比如“Device123”中的数字）。
+    ///     ♦ _：匹配下划线（无需转义，不是正则元字符）。。
+    ///     ♦ \'：匹配单引号 '（逐字字符串中 \` 是普通字符，实际等价于'`；即使不转义也不影响）。
+    ///     ♦ #：匹配井号 #（无需转义）。
+    ///     ♦ \(和 \)：	匹配左括号(和右括号 )，正则中()是分组元字符，需转义为普通字符。
+    ///     ♦ \.：匹配点 .（正则中 .是“任意字符”元字符，需转义为普通点）。
+    ///     ♦ \?：匹配问号 ?（正则中 ?是量词元字符，需转义为普通问号）。
+    ///     ♦ ,&%@!=-：匹配逗号 ,、&、%、@、=、！、-（均无需转义，不是元字符）。
+    /// 3)*: 量词，表示前面的元素可以出现 0 次或多次。这里修饰前面的字符类 [\u4e00-\u9fa5...]，意味着：整个字符串可以由任意数量的允许字符组成（包括空字符串）。
+    /// 4)$: 匹配字符串的结束位置
+    /// </summary>
+    public const string CategoryNameCharRegexPattern = @"^[\u4e00-\u9fa5a-zA-Z0-9_\'#\(\)\.\?,&%@!=-]*$";
+    public const int MaxCategoryNameLength = 64;
+
+    public const int MaxDescriptionLength = 128;
+
+}
