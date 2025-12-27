@@ -1,0 +1,225 @@
+{
+  "schema": "https://iotx-tsl.oss-ap-southeast-1.aliyuncs.com/schema.json",
+  "profile": {
+    "version": "1.0",
+    "productKey": "a1uTRHgdQVF"
+  },
+  "properties": [
+    {
+      "identifier": "ambientTemperature",
+      "name": "环境温度",
+      "accessMode": "r",
+      "desc": "环境温度（精度 ±0.5°C）",
+      "required": false,
+      "dataType": {
+        "type": "float",
+        "specs": {
+          "min": "-10",
+          "max": "60",
+          "unit": "°",
+          "unitName": "度",
+          "step": "1"
+        }
+      }
+    },
+    {
+      "identifier": "ambientHumidity",
+      "name": "环境湿度",
+      "accessMode": "r",
+      "desc": "环境湿度（精度 ±5% RH）",
+      "required": false,
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": "0",
+          "max": "100",
+          "unit": "%RH",
+          "unitName": "相对湿度",
+          "step": "5"
+        }
+      }
+    },
+    {
+      "identifier": "humanPresence",
+      "name": "人体存在检测",
+      "accessMode": "r",
+      "desc": "人体存在检测（支持红外 / 毫米波雷达",
+      "required": false,
+      "dataType": {
+        "type": "bool",
+        "specs": {
+          "0": "无人",
+          "1": "有人"
+        }
+      }
+    },
+    {
+      "identifier": "energySavingMode",
+      "name": "节能模式",
+      "accessMode": "rw",
+      "desc": "节能模式（自动降低风速以减少功耗）",
+      "required": false,
+      "dataType": {
+        "type": "enum",
+        "specs": {
+          "0": "关",
+          "1": "开"
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "identifier": "post",
+      "name": "post",
+      "type": "info",
+      "required": true,
+      "desc": "属性上报",
+      "method": "thing.event.property.post",
+      "outputData": [
+        {
+          "identifier": "ambientTemperature",
+          "name": "环境温度",
+          "dataType": {
+            "type": "float",
+            "specs": {
+              "min": "-10",
+              "max": "60",
+              "unit": "°",
+              "unitName": "度",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "ambientHumidity",
+          "name": "环境湿度",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "%RH",
+              "unitName": "相对湿度",
+              "step": "5"
+            }
+          }
+        },
+        {
+          "identifier": "humanPresence",
+          "name": "人体存在检测",
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": "无人",
+              "1": "有人"
+            }
+          }
+        },
+        {
+          "identifier": "energySavingMode",
+          "name": "节能模式",
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": "关",
+              "1": "开"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "identifier": "set",
+      "name": "set",
+      "required": true,
+      "callType": "async",
+      "desc": "属性设置",
+      "method": "thing.service.property.set",
+      "inputData": [
+        {
+          "identifier": "energySavingMode",
+          "name": "节能模式",
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": "关",
+              "1": "开"
+            }
+          }
+        }
+      ],
+      "outputData": []
+    },
+    {
+      "identifier": "get",
+      "name": "get",
+      "required": true,
+      "callType": "async",
+      "desc": "属性获取",
+      "method": "thing.service.property.get",
+      "inputData": [
+        "ambientTemperature",
+        "ambientHumidity",
+        "humanPresence",
+        "energySavingMode"
+      ],
+      "outputData": [
+        {
+          "identifier": "ambientTemperature",
+          "name": "环境温度",
+          "dataType": {
+            "type": "float",
+            "specs": {
+              "min": "-10",
+              "max": "60",
+              "unit": "°",
+              "unitName": "度",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "ambientHumidity",
+          "name": "环境湿度",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "%RH",
+              "unitName": "相对湿度",
+              "step": "5"
+            }
+          }
+        },
+        {
+          "identifier": "humanPresence",
+          "name": "人体存在检测",
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": "无人",
+              "1": "有人"
+            }
+          }
+        },
+        {
+          "identifier": "energySavingMode",
+          "name": "节能模式",
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": "关",
+              "1": "开"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "functionBlockId": "EnvironmentPerception",
+  "functionBlockName": "环境感知模块"
+}

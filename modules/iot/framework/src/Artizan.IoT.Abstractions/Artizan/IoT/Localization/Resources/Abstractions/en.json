@@ -1,0 +1,16 @@
+{
+  "culture": "en",
+  "texts": {
+    "IoT:TSLFormatError": "TSL Format Error: {Errors}",
+    "DisplayName:Artizan.IoT.Message.Cache.Enabled": "Enabled",
+    "DisplayName:Artizan.IoT.Message.Cache.EnabledDescription": "Enable Device Data Caching",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchSize": "Device Data Cache Batch Write Threshold",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchSizeDescription": "Triggers batch write to cache when this number is reached",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchTimeoutSeconds": "Device Data Cache Batch Write Timeout (Seconds)",
+    "DisplayName:Artizan.IoT.Message.Cache.BatchTimeoutSecondsDescription": "Triggers batch write to cache after timeout even if the threshold is not reached",
+    "DisplayName:Artizan.IoT.Message.Cache.LatestDataExpireSeconds": "Device Data Latest Value Cache Expiration Time (Seconds)",
+    "DisplayName:Artizan.IoT.Message.Cache.LatestDataExpireSecondsDescription": "Redis expiration time for the latest property data of device data",
+    "DisplayName:Artizan.IoT.Message.Cache.HistoryDataRetainSeconds": "Device Data Historical Data Retention Period (Seconds)",
+    "DisplayName:Artizan.IoT.Message.Cache.HistoryDataRetainSecondsDescription": "Maximum retention period of historical data in the cache"
+  }
+}
