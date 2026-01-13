@@ -1,0 +1,49 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "Artizan.IoT.Core": {
+      "path": "src/Artizan.IoT.Core/Artizan.IoT.Core.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.Mqtt": {
+      "path": "src/Artizan.IoT.Mqtt/Artizan.IoT.Mqtt.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.Abstractions": {
+      "path": "src/Artizan.IoT.Abstractions/Artizan.IoT.Abstractions.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.TimeSeries.Abstractions": {
+      "path": "src/Artizan.IoT.TimeSeries.Abstractions/Artizan.IoT.TimeSeries.Abstractions.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.TimeSeries.InfluxDB2": {
+      "path": "src/Artizan.IoT.TimeSeries.InfluxDB2/Artizan.IoT.TimeSeries.InfluxDB2.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.Thing": {
+      "path": "src/Artizan.IoT.Thing/Artizan.IoT.Thing.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.ScriptEngine": {
+      "path": "src/Artizan.IoT.ScriptEngine/Artizan.IoT.ScriptEngine.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.ScriptDataCodec": {
+      "path": "src/Artizan.IoT.ScriptDataCodec/Artizan.IoT.ScriptDataCodec.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.ScriptDataCodec.JavaScript": {
+      "path": "src/Artizan.IoT.ScriptDataCodec.JavaScript/Artizan.IoT.ScriptDataCodec.JavaScript.abppkg",
+      "folder": "src"
+    },
+    "Artizan.IoT.ScriptDataCodec.Python": {
+      "path": "src/Artizan.IoT.ScriptDataCodec.Python/Artizan.IoT.ScriptDataCodec.Python.abppkg",
+      "folder": "src"
+    }
+  }
+}
