@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Artizan.IoTHub</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />  
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />  
+    <ProjectReference Include="..\..\src\Artizan.IoTHub.EntityFrameworkCore\Artizan.IoTHub.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Artizan.IoTHub.Application.Tests\Artizan.IoTHub.Application.Tests.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" />  
+  </ItemGroup>
+
+</Project>

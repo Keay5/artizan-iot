@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Artizan.IoTHub</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Artizan.IoTHub.Domain\Artizan.IoTHub.Domain.csproj" />
+    <ProjectReference Include="..\Artizan.IoTHub.TestBase\Artizan.IoTHub.TestBase.csproj" />
+  </ItemGroup>
+
+
+</Project>
