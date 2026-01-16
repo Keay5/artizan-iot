@@ -1,9 +1,0 @@
-{
-  "id": "6522cccb-b21e-4faf-83ff-1905722e4712",
-  "template": "empty",
-  "modules": {
-    "Artizan.IoTHub": {
-      "path": "Artizan.IoTHub.abpmdl"
-    }
-  }
-}
