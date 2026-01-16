@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace Artizan.IoT.Mqtt.Auth;
+
+/// <summary>
+/// 安全模式常量（严格遵循阿里云文档固定值）,目前暂时不考虑这种限制
+/// </summary>
+[Obsolete("为了降低设计难度，废弃安全模式的业务规则")]
+public static class MqttSecureModeConstants
+{
+    /// <summary>
+    /// TCP 直连（不加密）
+    /// </summary>
+    public const int Tcp = 2;
+
+    /// <summary>
+    /// TLS 加密连接
+    /// </summary>
+    public const int Tls = 3;
+
+    /// <summary>
+    /// 一型一密免预注册专用（动态注册）
+    /// </summary>
+    public const int OneProductNoPreRegister = -2;
+}

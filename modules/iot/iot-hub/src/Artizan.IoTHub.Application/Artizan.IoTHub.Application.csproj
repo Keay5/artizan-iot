@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" />  
+    <PackageReference Include="Volo.Abp.Ddd.Application" />
+    <PackageReference Include="MQTTnet.Server" />
+    <PackageReference Include="Polly" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\src\Artizan.IoT.Mqtt\Artizan.IoT.Mqtt.csproj" />
+    <ProjectReference Include="..\..\..\framework\src\Artizan.IoT.TimeSeries.InfluxDB2\Artizan.IoT.TimeSeries.InfluxDB2.csproj" />
+    <ProjectReference Include="..\Artizan.IoTHub.Application.Contracts\Artizan.IoTHub.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Artizan.IoTHub.Domain\Artizan.IoTHub.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
